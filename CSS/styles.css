@@ -1,0 +1,146 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Font-size-paragraph: 16px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: var(--Pale-blue);
+  font-size: var(--Font-size-paragraph);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 390px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+}
+
+#title {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  text-align: center;
+  margin: 40px 0 15px 0;
+}
+
+.summary p {
+  text-align: center;
+  color: var(--Desaturated-blue);
+  margin: 30px;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: var(--Very-pale-blue);
+}
+
+.plan-details {
+  padding: 0 7px;
+}
+
+.annual-plan #plan {
+  color: var(--Dark-blue);
+  font-weight: 700;
+ margin-bottom: 5px;
+}
+
+.annual-plan #value {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.annual-plan img {
+  width: 40px;
+  height: 40px;
+}
+
+.annual-plan a {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.annual-plan a:hover {
+  text-decoration: none;
+  color:  hsla(245, 75%, 60%, 0.836);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  background-color: var(--Bright-blue);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  margin-bottom: 30px;
+  box-shadow: 2px 5px 30px rgba(17, 0, 255, 0.377);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: hsl(245, 75%, 60%);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+footer a {
+  color: var(--Desaturated-blue);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  color: var(--Dark-blue);
+}
